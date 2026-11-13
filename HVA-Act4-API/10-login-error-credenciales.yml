@@ -1,0 +1,23 @@
+info:
+  name: Untitled 10
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://204.48.17.197:8088/api/auth/login
+  body:
+    type: json
+    data: |2-
+        {
+          "username": "alexis_hva",
+          "password": "contraseñaMala"
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,25 @@
+info:
+  name: Untitled 8
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://204.48.17.197:8088/api/productos
+  body:
+    type: json
+    data: |2-
+        {
+          "nombre": "Teclado Mecánico",
+          "precio": 1200.0,
+          "stock": 5,
+          "categoria": "Periféricos"
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

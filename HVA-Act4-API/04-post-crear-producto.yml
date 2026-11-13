@@ -1,0 +1,27 @@
+info:
+  name: Untitled 4
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://204.48.17.197:8088/api/productos
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Monitor Gamer 165Hz",
+        "precio": 4200.0,
+        "stock": 10,
+        "categoria": "Monitores"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbGV4aXNfaHZhIiwiaWF0IjoxNzk0NTMzNDU2LCJleHAiOjE3OTQ2MTk4NTZ9.ZQG7C28qG02RlV8oOfvYMUvauVb85wjw5TSZV-xbJ36QMuaPuk3z3-D6y1WZN3zY6gcnXNOD5E8vw8Zmp_bEHQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

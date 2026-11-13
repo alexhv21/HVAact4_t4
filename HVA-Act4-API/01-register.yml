@@ -1,0 +1,24 @@
+info:
+  name: Untitled 1
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://204.48.17.197:8088/api/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "username": "alexis_hva",
+        "email": "alexis@itoaxaca.edu.mx",
+        "password": "Password123!"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
